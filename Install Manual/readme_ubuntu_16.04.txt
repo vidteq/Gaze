@@ -224,6 +224,7 @@ sudo apt-get install -y libpng++-dev
 #Flycapture2-2.10 is ideal for ubuntu 16.04
 #download it using https://www.ptgrey.com/Downloads/BySKU?family=FireflyMV&sku=FFMV-03M2C-CS
 #using #username: ***   pass:***
+#or You can download from GITHUB https://github.com/vidteq/Gaze/raw/master/sdk/flycapture2-2.10.3.266-amd64-pkg.tgz
 #FlyCapture 2.10.3.266 SDK - Linux Ubuntu 16.04 (64-bit) — 04/13/2017 - 14.1020MB or any latest for 16.04
 cd ~/Downloads
 tar -xvf flycapture2-2.10.3.266-amd64-pkg.tgz
@@ -235,6 +236,7 @@ cd ~/Downloads
 
 #download triclops using https://www.ptgrey.com/Downloads/BySKU?family=Bumblebee2&sku=BB2-08S2C-60
 #using #username: ***   pass:***
+#or You can download from GITHUB https://github.com/vidteq/Gaze/raw/master/sdk/triclops-3.4.0.8-amd64-pkg.tgz
 #download Triclops 3.4.0.8 - Linux Ubuntu 16.04 (64-bit) — 04/28/2017 - 38.996MB
 cd ~/Downloads
 mkdir triclops
@@ -246,6 +248,7 @@ cd ~/Downloads
 
 
 #download Spatial GPS SDK using https://www.advancednavigation.com.au/product/spatial#software
+#or You can download from GITHUB https://github.com/vidteq/Gaze/raw/master/sdk/SpatialSDK.zip
 #download SpatialSDK.zip
 mkdir spatial
 cd spatial

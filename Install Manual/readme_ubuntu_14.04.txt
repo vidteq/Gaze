@@ -151,6 +151,7 @@ sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 60 --slave /u
 #Flycapture2-2.9 is ideal for ubuntu 14.04
 #download it using https://www.ptgrey.com/Downloads/BySKU?family=FireflyMV&sku=FFMV-03M2C-CS
 #using #username: ***   pass:***
+#or You can download from GITHUB https://github.com/vidteq/Gaze/raw/master/sdk/triclops-3.4.0.8-amd64-pkg.tgz
 #download FlyCapture 2.9.3.43 SDK - Linux Ubuntu 14.04 (64-bit) — 04/28/2016 - 11.1706MB
 tar -xvf flycapture2-2.9.3.43-amd64-pkg.tgz
 cd flycapture2-2.9.3.43-amd64/
@@ -158,12 +159,14 @@ sudo sh install_flycapture.sh
 
 #download triclops using https://www.ptgrey.com/Downloads/BySKU?family=Bumblebee2&sku=BB2-08S2C-60
 #using #username: ***   pass:***
-#download Triclops 4.0.3.4 - Linux Ubuntu 16.04 (64-bit) — 04/28/2017 - 38.996MB
+#or You can download from GITHUB https://github.com/vidteq/Gaze/raw/master/sdk/triclops-3.4.0.8-amd64-pkg.tgz
+#download Triclops 3.4.0.8 - Linux Ubuntu 16.04 (64-bit) — 04/28/2017 - 38.996MB
 tar -xvf triclops-3.4.0.8-amd64-pkg.tgz
 cd triclops-3.4.0.8-amd64/
 sudo sh install_triclops.sh
 
 #download Spatial GPS SDK using https://www.advancednavigation.com.au/product/spatial#software
+#or You can download from GITHUB https://github.com/vidteq/Gaze/raw/master/sdk/SpatialSDK.zip
 #download SpatialSDK.zip
 mkdir spatial
 cd spatial
