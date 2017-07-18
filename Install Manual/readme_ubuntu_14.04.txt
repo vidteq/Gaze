@@ -151,7 +151,7 @@ sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 60 --slave /u
 #Flycapture2-2.9 is ideal for ubuntu 14.04
 #download it using https://www.ptgrey.com/Downloads/BySKU?family=FireflyMV&sku=FFMV-03M2C-CS
 #using #username: ***   pass:***
-#or You can download from GITHUB https://github.com/vidteq/Gaze/raw/master/sdk/triclops-3.4.0.8-amd64-pkg.tgz
+#or You can download from GITHUB https://github.com/vidteq/Gaze/raw/master/sdk/flycapture2-2.9.3.43-amd64-pkg.tgz
 #download FlyCapture 2.9.3.43 SDK - Linux Ubuntu 14.04 (64-bit) — 04/28/2016 - 11.1706MB
 tar -xvf flycapture2-2.9.3.43-amd64-pkg.tgz
 cd flycapture2-2.9.3.43-amd64/
