@@ -144,10 +144,17 @@ make doc
 # TBD
 #Install ROS Indigo RVIZ and configure environment
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
-sudo apt-key adv --keyserver hkp://pool.sks-keyservers.net --recv-key 0xB01FA116
+#sudo apt-key adv --keyserver hkp://pool.sks-keyservers.net --recv-key 0xB01FA116
+sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
 sudo apt-get update
-sudo apt-get install -y ros-indigo-rviz ros-indigo-pcl-ros
-source /opt/ros/indigo/setup.bash
+
+--------------
+sudo apt-get install ros-kinetic-desktop-full
+or
+sudo apt-get install -y ros-kinetic-rviz ros-kinetic-pcl-ros
+-----------
+
+source /opt/ros/kinetic/setup.bash
 
 #Clone the ROS SDK repository
 
@@ -165,13 +172,13 @@ catkin_make
 
 #To test, configure environment and launch node
 
-source /opt/ros/indigo/setup.bash
+source /opt/ros/kinetic/setup.bash
 source ~/QuanergySystems/catkin_ws/devel/setup.bash
 roslaunch quanergy_client_ros client.launch host:=<hostname_or_ip>
 
 #To add ROS environment configuration automatically to every future bash session
 
-echo "source /opt/ros/indigo/setup.bash" >> ~/.bashrc
+echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 echo "source ~/QuanergySystems/catkin_ws/devel/setup.bash" >> ~/.bashrc
 
 
