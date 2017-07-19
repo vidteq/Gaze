@@ -25,15 +25,15 @@ sudo apt-get -y install git build-essential libboost-all-dev
 #----install pcl dependency
 #https://askubuntu.com/questions/916260/how-to-install-point-cloud-library-v1-8-pcl-1-8-0-on-ubuntu-16-04-2-lts-for/916261
 
-INSTALLATION
+#INSTALLATION
 
-Install oracle-java8-jdk:
+#Install oracle-java8-jdk:
 
 sudo add-apt-repository -y ppa:webupd8team/java && sudo apt update && sudo apt -y install oracle-java8-installer
 
 #press ok and yes later while install
 
-Install various dependencies and pre-requisites:
+#Install various dependencies and pre-requisites:
 
 sudo apt -y install g++ cmake cmake-gui doxygen mpi-default-dev openmpi-bin openmpi-common libusb-1.0-0-dev libqhull* libusb-dev libgtest-dev
 sudo apt -y install git-core freeglut3-dev pkg-config build-essential libxmu-dev libxi-dev libphonon-dev libphonon-dev phonon-backend-gstreamer
@@ -51,7 +51,7 @@ cmake ..
 make                                                                   
 sudo make install
 
-Install Point Cloud Library v1.8:
+#Install Point Cloud Library v1.8:
 
 cd ~/Downloads
 wget https://github.com/PointCloudLibrary/pcl/archive/pcl-1.8.0.tar.gz
@@ -61,18 +61,18 @@ cmake ..
 make
 sudo make install
 
-Perform some clean up:
+#Perform some clean up:
 
 cd ~/Downloads
 rm libeigen3-dev_3.2.5-4_all.deb VTK-7.1.0.tar.gz pcl-1.8.0.tar.gz
 sudo rm -r VTK-7.1.0 pcl-pcl-1.8.0
 
-VALIDATION
+#VALIDATION
 
 cd ~
 mkdir pcl-test && cd pcl-test
 
---- Create a CMakeLists.txt file:
+#--- Create a CMakeLists.txt file: and copy paste below section
 
 cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
 project(pcl-test)
@@ -88,7 +88,7 @@ target_link_libraries(pcl-test ${PCL_LIBRARIES})
 SET(COMPILE_FLAGS "-std=c++11")
 add_definitions(${COMPILE_FLAGS})
 
----Create a main.cpp file:
+#---Create a main.cpp file: and copy paste below section
 
 #include <iostream>
 
@@ -97,21 +97,21 @@ int main() {
     return (0);
 }
 
-Compile:
+#Compile:
 
 mkdir build && cd build
 cmake ..
 make
 
-Test:
+#Test:
 
 ./pcl-test
 
-Output -> hello, world!
+#Output -> hello, world!
 
 /bin/rm -rf ~/pcl-test
 
--------------
+#-------------
 
 #Clone the SDK repository
 mkdir ~/QuanergySystems
@@ -135,13 +135,13 @@ sudo make install
 ./test -host 10.4.71.246
 
 #For documentation, run the following and then open doc/index.html in any browser. this is optional
-make doc
+#make doc
 
 
 
 
 #----installing quanergy_client_ros procedure : ROS is optional procedure 
-# TBD
+
 #Install ROS Indigo RVIZ and configure environment
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 #sudo apt-key adv --keyserver hkp://pool.sks-keyservers.net --recv-key 0xB01FA116
