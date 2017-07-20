@@ -1,4 +1,5 @@
 #Ubuntu 16.04 LTS Setup Guide
+# Commented line need not be exercised (#) its optional or reference
 
 sudo apt-get -y update
 #sudo apt-get -y upgrade   #you can skip upgrade of 
@@ -366,3 +367,35 @@ sudo service apache2 restart
 #--- install packages below is optional if needed install
 sudo apt-get install default-jre -y
 sudo apt-get install default-jdk -y
+sudo apt-get install -y gparted
+
+
+#------------------
+#--- then copy service to /etc/systemd/system
+sudo cp gaze-left-machine-check.service /etc/systemd/system/
+
+#--- to run the service cmd's
+#to enable service
+sudo systemctl enable gaze-left-machine-check.service
+#to start service
+sudo systemctl start gaze-left-machine-check.service
+#check service status
+sudo systemctl status gaze-left-machine-check.service
+
+#stop service
+sudo systemctl stop gaze-left-machine-check.service
+#to disable service
+sudo systemctl disable gaze-left-machine-check.service
+
+#------------------
+#for ip config of system and mobile dongle
+#create new ethernet ip for both
+#and edit connection with IPv4 settings 
+#change method to manual
+#pass static ip like 10.4.71.* netmask 255.255.255.0 gateway 10.4.71.1
+#last DNS servers: 10.4.71.1
+
+#similar to dongle with static ip 192.168.0.100 netmask 255.255.255.0 gateway 192.168.0.1
+#last dns server 192.168.0.1
+
+#----------------

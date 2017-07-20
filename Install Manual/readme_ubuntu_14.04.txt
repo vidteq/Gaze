@@ -275,3 +275,24 @@ Makefile changes
 2) on INC : add -std=c++11 at the begin and add this one too -I/usr/lib/x86_64-linux-gnu
 3) on LIB : add -ljpeg
 4) comment full config adding section at Gaze.cpp
+
+
+#------------------
+#--- then copy service to /etc/systemd/system
+sudo cp gaze-left-machine-check.service /etc/systemd/system/
+
+#--- to run the service cmd's
+#to enable service
+sudo systemctl enable gaze-left-machine-check.service
+#to start service
+sudo systemctl start gaze-left-machine-check.service
+#check service status
+sudo systemctl status gaze-left-machine-check.service
+
+#stop service
+sudo systemctl stop gaze-left-machine-check.service
+#to disable service
+sudo systemctl disable gaze-left-machine-check.service
+
+#------------------
+
