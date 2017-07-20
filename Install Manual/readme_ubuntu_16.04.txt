@@ -150,7 +150,7 @@ sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net --recv-key 421C365
 sudo apt-get update
 
 --------------
-sudo apt-get install ros-kinetic-desktop-full
+sudo apt-get install -y ros-kinetic-desktop-full
 or
 sudo apt-get install -y ros-kinetic-rviz ros-kinetic-pcl-ros
 -----------
