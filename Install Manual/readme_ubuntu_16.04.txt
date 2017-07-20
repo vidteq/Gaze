@@ -372,20 +372,22 @@ sudo apt-get install -y gparted
 
 #------------------
 #--- then copy service to /etc/systemd/system
-sudo cp gaze-left-machine-check.service /etc/systemd/system/
+#sudo cp gaze-left-machine-check.service /etc/systemd/system/
+#--- then copy service to /usr/local/bin
+#sudo cp gaze-services to /usr/local/bin/
 
 #--- to run the service cmd's
 #to enable service
-sudo systemctl enable gaze-left-machine-check.service
+#sudo systemctl enable gaze-left-machine-check.service
 #to start service
-sudo systemctl start gaze-left-machine-check.service
+#sudo systemctl start gaze-left-machine-check.service
 #check service status
-sudo systemctl status gaze-left-machine-check.service
+#sudo systemctl status gaze-left-machine-check.service
 
 #stop service
-sudo systemctl stop gaze-left-machine-check.service
+#sudo systemctl stop gaze-left-machine-check.service
 #to disable service
-sudo systemctl disable gaze-left-machine-check.service
+#sudo systemctl disable gaze-left-machine-check.service
 
 #------------------
 #for ip config of system and mobile dongle
