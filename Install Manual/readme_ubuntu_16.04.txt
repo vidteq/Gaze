@@ -235,6 +235,7 @@ sudo apt-get install -y libpng++-dev
 #or You can download from GITHUB https://github.com/vidteq/Gaze/raw/master/sdk/flycapture2-2.10.3.266-amd64-pkg.tgz
 #FlyCapture 2.10.3.266 SDK - Linux Ubuntu 16.04 (64-bit) — 04/13/2017 - 14.1020MB or any latest for 16.04
 cd ~/Downloads
+wget https://github.com/vidteq/Gaze/raw/master/sdk/flycapture2-2.10.3.266-amd64-pkg.tgz
 tar -xvf flycapture2-2.10.3.266-amd64-pkg.tgz
 cd flycapture2-2.10.3.266-amd64/
 sudo sh install_flycapture.sh
@@ -247,16 +248,18 @@ cd ~/Downloads
 #or You can download from GITHUB https://github.com/vidteq/Gaze/raw/master/sdk/triclops-3.4.0.8-amd64-pkg.tgz
 #download Triclops 3.4.0.8 - Linux Ubuntu 16.04 (64-bit) — 04/28/2017 - 38.996MB
 cd ~/Downloads
-mkdir triclops
-cd  triclops
-tar -xvf ../triclops-3.4.0.8-amd64-pkg.tgz
+wget https://github.com/vidteq/Gaze/raw/master/sdk/triclops-3.4.0.8-amd64-pkg.tgz
+tar -xvf triclops-3.4.0.8-amd64-pkg.tgz
+cd triclops-3.4.0.8-amd64
 sudo sh install_triclops.sh
 cd ~/Downloads
-/bin/rm -r triclops-3.4.0.8-amd64-pkg.tgz triclops
+/bin/rm -r triclops-3.4.0.8-amd64-pkg.tgz triclops-3.4.0.8-amd64
 
 
 #download Spatial GPS SDK using https://www.advancednavigation.com.au/product/spatial#software
 #or You can download from GITHUB https://github.com/vidteq/Gaze/raw/master/sdk/SpatialSDK.zip
+cd ~/Downloads
+wget https://github.com/vidteq/Gaze/raw/master/sdk/SpatialSDK.zip
 #download SpatialSDK.zip
 mkdir spatial
 cd spatial
