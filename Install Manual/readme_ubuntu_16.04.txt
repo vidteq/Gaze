@@ -377,7 +377,7 @@ sudo apt-get install -y gparted
 
 #------------------
 #--- then copy service to /etc/systemd/system
-sudo cp cp ~/Documents/vidteq/software/Gaze/service/linuxService/etc/systemd/system/gaze-left-machine-check.service /etc/systemd/system/
+sudo cp ~/Documents/vidteq/software/Gaze/service/linuxService/etc/systemd/system/gaze-left-machine-check.service /etc/systemd/system/
 #--- then copy service to /usr/local/bin
 sudo cp -rf ~/Documents/vidteq/software/Gaze/service/linuxService/usr/local/bin/gaze-services to /usr/local/bin/
 
