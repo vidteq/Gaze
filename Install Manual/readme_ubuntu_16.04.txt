@@ -261,13 +261,13 @@ cd ~/Downloads
 cd ~/Downloads
 wget https://github.com/vidteq/Gaze/raw/master/sdk/SpatialSDK.zip
 #download SpatialSDK.zip
-mkdir spatial
-cd spatial
-unzip ../spatialsdk.zip
+mkdir SpatialSDK
+cd SpatialSDK
+unzip ../SpatialSDK.zip
 cd C/Dynamic
 make
 cd ~/Downloads
-/bin/rm -r spatial spatialsdk.zip
+/bin/rm -r SpatialSDK SpatialSDK.zip
 
 
 #how to configure the GPS to run without sudo permission, Check below steps
