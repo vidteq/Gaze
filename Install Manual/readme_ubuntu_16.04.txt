@@ -387,6 +387,9 @@ sudo cp ~/Documents/vidteq/software/Gaze/service/linuxService/etc/systemd/system
 #--- then copy service to /usr/local/bin
 sudo cp -rf ~/Documents/vidteq/software/Gaze/service/linuxService/usr/local/bin/gaze-services to /usr/local/bin/
 
+sudo chmod +x /usr/local/bin/gaze-services/gaze-left-machine-check.sh
+sudo chmod +x /usr/local/bin/gaze-services/gaze-right-machine-check.sh
+
 #--- to run the service cmd's
 #to enable service
 #sudo systemctl enable gaze-left-machine-check.service
