@@ -375,6 +375,12 @@ sudo apt-get install default-jdk -y
 sudo apt-get install -y gparted
 
 
+#---- for vpn copy directory
+sudo cp ~/Documents/vidteq/software/Gaze/gazePkg/manualInstallation/vpn ~/Downloads/
+#then open 
+gvim ~/Downloads/vpn/fw-udp-1194-gaze-config.ovpn
+#and change line number 13 last path to /home/gaze/Downloads/vpn/openvpnpass.txt
+
 #------------------
 #--- then copy service to /etc/systemd/system
 sudo cp ~/Documents/vidteq/software/Gaze/service/linuxService/etc/systemd/system/gaze-left-machine-check.service /etc/systemd/system/
