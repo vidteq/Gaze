@@ -272,7 +272,7 @@ cd ~/Downloads
 
 #how to configure the GPS to run without sudo permission, Check below steps
 #to check which group the current user is on
-groups gaze-t1
+groups <user_name>
 #As you've noticed, the /dev/ttyUSB0 device has the group of dialout. All you need to do is add the <user_name> user to the dialout group:
 sudo adduser <user_name> dialout
 
@@ -336,14 +336,16 @@ nautilus &
 #--- need other files
 #vpn folder
 
+mkdir ~/Documents/vidteq
+cd ~/Documents/vidteq
 #checkout gaze system from vidteq repository
 cvs login
 #use password: ***
 cvs checkout software/Gaze
 
 #
-cp config.php ~/GazeSystems/vidteq/software/gazeRecord/www/
-cp config.js ~/GazeSystems/vidteq/software/gazeRecord/www/js/
+cp ~/Documents/vidteq/software/Gaze/gazePkg/manualInstallation/www/config.php ~/Documents/vidteq/software/Gaze/www/
+cp ~/Documents/vidteq/software/Gaze/gazePkg/manualInstallation/www/js/config.js ~/Documents/vidteq/software/Gaze/www/js/
 
 
 
@@ -354,8 +356,8 @@ sudo gvim /etc/apache2/sites-available/000-default.conf
 
 ServerAdmin webmaster@localhost
 #DocumentRoot /var/www/html
-DocumentRoot /home/gaze-t1/GazeSystems/vidteq/software/gazeRecord/www
-<Directory /home/gaze-t1/GazeSystems/vidteq/software/gazeRecord/www >
+DocumentRoot /home/<userName>/Documents/vidteq/software/gazeRecord/www
+<Directory /home/<userName>/Documents/vidteq/software/gazeRecord/www >
    Options FollowSymLinks
    AllowOverride all
    Require all granted
@@ -375,9 +377,9 @@ sudo apt-get install -y gparted
 
 #------------------
 #--- then copy service to /etc/systemd/system
-#sudo cp gaze-left-machine-check.service /etc/systemd/system/
+sudo cp cp ~/Documents/vidteq/software/Gaze/service/linuxService/etc/systemd/system/gaze-left-machine-check.service /etc/systemd/system/
 #--- then copy service to /usr/local/bin
-#sudo cp gaze-services to /usr/local/bin/
+sudo cp -rf ~/Documents/vidteq/software/Gaze/service/linuxService/usr/local/bin/gaze-services to /usr/local/bin/
 
 #--- to run the service cmd's
 #to enable service
