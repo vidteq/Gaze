@@ -211,6 +211,7 @@ sudo apt-get install ntp -y
 sudo apt-get install apache2 -y
 sudo apt-get install -y xvfb
 sudo apt-get install php7.0 -y
+sudo apt-get install php7.0-gd -y
 sudo apt-get install libapache2-mod-php7.0 -y
 sudo apt-get install libgtkmm-2.4-dev -y
 sudo apt-get install libglademm-2.4-dev -y
