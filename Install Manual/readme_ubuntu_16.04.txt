@@ -226,7 +226,7 @@ sudo apt-get install -y libjson-glib-dev
 sudo apt-get install -y openvpn
 sudo apt-get install -y libjpeg-dev
 sudo apt-get install -y libpng++-dev
-
+sudo apt-get install -y ffmpeg
 
 #------------------
 
