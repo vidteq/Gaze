@@ -200,6 +200,7 @@ git clone https://github.com/an-scott/Advanced_Navigation_driver.git
    target_link_libraries(an_driver ${catkin_LIBRARIES})
 9. Type: "cd ~/ros".
 10. Type: "catkin_make".
+11. Open a new Terminal window and type: "source ~/ros/devel/setup.bash".
 
 #for more readme ros setup check ROS AN Driver Notes.txt inside git clone which you have downloaded
 
@@ -224,9 +225,25 @@ git clone https://github.com/an-scott/Advanced_Navigation_driver.git
 
 
 #--- to install ros point grey camera driver
-https://github.com/ros-drivers/pointgrey_camera_driver
+git clone https://github.com/ros-drivers/pointgrey_camera_driver
+
+1) cd ~/ros/src/
+2) catkin_create_pkg image_exposure_msgs
+3) catkin_create_pkg statistics_msgs
+4) catkin_create_pkg wfov_camera_msgs
+5) catkin_create_pkg pointgrey_camera_description
+6) catkin_create_pkg pointgrey_camera_driver
+6) cp ~/Downloads/pointgrey_camera_driver/image_exposure_msgs/* ~/ros/src/image_exposure_msgs/
+7) cp ~/Downloads/pointgrey_camera_driver/statistics_msgs/* ~/ros/src/statistics_msgs/
+8) cp ~/Downloads/pointgrey_camera_driver/wfov_camera_msgs/* ~/ros/src/wfov_camera_msgs/
+9) cp ~/Downloads/pointgrey_camera_driver/pointgrey_camera_description/* ~/ros/src/pointgrey_camera_description/
+10) cp ~/Downloads/pointgrey_camera_driver/pointgrey_camera_driver/* ~/ros/src/pointgrey_camera_driver/
+11) cd ~/ros
+12) catkin_make
+
 #or
-sudo apt-get install ros-kinetic-pointgrey-camera-driver
+
+#sudo apt-get install ros-kinetic-pointgrey-camera-driver
 
 #--- to test use the below commands whether the camera is working
 roscore
